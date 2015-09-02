@@ -114,7 +114,7 @@ auth process.
             var $input;
 
             $form = $("<form>");
-            $form.attr("action", "/complete/google-plus");
+            $form.attr("action", "{% url "social:complete" backend="google-plus" %}");
             $form.attr("method", "post");
             $input = $("<input>");
             $input.attr("name", "access_token");
